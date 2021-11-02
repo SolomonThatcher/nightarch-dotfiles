@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/sy'
+let g:netrw_dirhist_4='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source/XPSP1/NT/shell/osshell/ep/winmine'
+let g:netrw_dirhist_3='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source/XPSP1/NT/shell/osshell/ep'
+let g:netrw_dirhist_2='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source/XPSP1/NT/shell/osshell'
+let g:netrw_dirhist_1='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source/XPSP1/NT/shell'
+let g:netrw_dirhist_0='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source/XPSP1/NT'
+let g:netrw_dirhist_9='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source/XPSP1'
+let g:netrw_dirhist_8='/home/sy/Documents/Programming/WindowsXP/nt5src-master/Source'
+let g:netrw_dirhist_7='/home/sy/Documents/Programming/WindowsXP/nt5src-master'
+let g:netrw_dirhist_6='/home/sy/Documents/Programming/WindowsXP'

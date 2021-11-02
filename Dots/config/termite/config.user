@@ -1,0 +1,94 @@
+[options]
+allow_bold = true
+#audible_bell = false
+#bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
+clickable_url = true
+#clickable_url_ctrl = false
+dynamic_title = true
+font = Monospace 9
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+word_char_exceptions = -=&#:/.?@+~_%;
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = xdg-open
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+#scrollbar = off
+
+# Whether to prefer using the GTK dark theme variant.
+#gtk_dark_theme = false
+
+# Enable smart copy. ^C will copy if text has been selected. ^V will paste. It
+# is no longer possible to send a ^V to the running program when this option is
+# enabled.
+#smart_copy = false
+
+[colors]
+foreground=#a6a28c
+background = rgba(20, 20, 20, 0.75)
+cursor=#a6a28c
+
+# Colors from color0 to color254 can be set
+color0=#20201d
+color1=#d73737
+color2=#60ac39
+color3=#cfb017
+color4=#6684e1
+color5=#b854d4
+color6=#1fad83
+color7=#a6a28c
+color8=#7d7a68
+color9=#d73737
+color10=#60ac39
+color11=#cfb017
+color12=#6684e1
+color13=#b854d4
+color14=#1fad83
+color15=#fefbec
+
+color16=#b65611
+color17=#d43552
+color18=#292824
+color19=#6e6b5e
+color20=#999580
+color21=#e8e4cf
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s

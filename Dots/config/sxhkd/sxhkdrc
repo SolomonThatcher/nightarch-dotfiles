@@ -1,0 +1,74 @@
+#    _______  __   __  __   __  ___   _  ______  
+#   |       ||  |_|  ||  | |  ||   | | ||      | 
+#   |  _____||       ||  |_|  ||   |_| ||  _    |
+#   | |_____ |       ||       ||      _|| | |   |
+#   |_____  | |     | |       ||     |_ | |_|   |
+#    _____| ||   _   ||   _   ||    _  ||       |
+#   |_______||__| |__||__| |__||___| |_||______| 
+#
+#   Config by Solomon Thatcher
+#   Github.com/SolomonThatcher
+
+
+
+##---------- Keybindings for bspwm ----------##
+
+#Terminal (termite)
+super + Return
+    termite
+
+#Floating terminal (termite)
+super + shift + Return
+    termite -f
+
+##---------- Rofi Launcher & Menus ----------##
+
+# Rofi App Launcher
+super + d
+	rofi -show run
+
+# Rofi Network Menu
+super + n
+	rofi-wifi-menu
+
+# Rofi Power Menu
+super + x
+    rofi -show power-menu -modi power-menu:/home/sy/.local/bin/rofi-power-menu
+
+##---------- Applications ----------##
+
+# Pacmixer
+super + v
+	termite -e 'pacmixer'
+
+# Ranger
+super + f
+    termite -d '/home/sy/' -e 'zsh' -e 'ranger'
+
+##---------- Bspwm ----------##
+
+# Reload Keybindings
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Close App
+super + c
+	bspc node -c
+
+# Fullscreen or Monocle
+super + f
+	bspc desktop -l next
+
+#Focus or send to desktop
+super + {_,shift + }{1-8}
+    bspc {desktop -f,node -d} '^{1-8}'
+
+# Toggle beetwen floating & tiled
+super + space
+    bspc node -t "~"{floating,tiled}
+
+# Switch to last opened workspace
+super + {Tab,grave}
+	bspc {node,desktop} -f last
+
+##---------- EOF ----------##

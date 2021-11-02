@@ -1,0 +1,23 @@
+#! /bin/sh
+
+picom -f &
+sxhkd &
+
+if [[ $(xrandr -q | grep 'HDMI-0 connected') ]]; then
+	xrandr --output DP-2 --primary --mode 1920x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --rotate normal --left-of DP-2
+fi
+
+bspc monitor DP-2 -d I II III IV
+bspc monitor HDMI-0 -d V VI VII VIII
+bspc wm -O DP-2 HDMI-0
+
+feh --bg-scale /home/sy/Pictures/Wallpapers/black.jpeg
+
+bspc config border_width         2
+bspc config window_gap          10
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+sh /home/sy/.config/monitors/monitor.sh
